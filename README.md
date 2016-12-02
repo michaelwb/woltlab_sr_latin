@@ -17,7 +17,7 @@ https://github.com/michaelwb/woltlab_sr_latin/blob/master/sr.xml - Српски 
 
 Овај део README.md фајла ће редовно бити ажуриран.
 
-12/03/2016 - Превођење производа "Woltlab Burning Board 4.1) је почело.
+12/03/2016 - Превођење производа "Woltlab Burning Board 4.1" је почело.
 
 ## Остало
 
