@@ -26,7 +26,6 @@
 			<li>Skrivena korisnička imena: Svakome će biti dodeljeno skriveno korisničko ime koje će biti sačuvano za temu.</li>
 			<li>Mešavina: Svakome će biti dodeljeno korisničko ime od 12 znakova koje će biti sačuvano za temu. </li>
 		</ul>]]></item>
-		<item name="wcf.acp.option.wbb_post_anonymization_names"><![CDATA[Skrivena korisnička imena]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_names"><![CDATA[Skrivena korisnička imena"></item>
 	</category>
 </language>
--
