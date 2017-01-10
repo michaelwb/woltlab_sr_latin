@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="sr">
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.anonymizationForced"><![CDATA[Forsiraj anonimnost]]></item>
+	</category>
+	
+	<category name="wbb.post">
+		<item name="wbb.post.anonymized"><![CDATA[Anoniman]]></item>
+		<item name="wbb.post.option.anonymization"><![CDATA[Sakrij poruku]]></item>
+		<item name="wbb.post.option.anonymization.description"><![CDATA[Ako izaberete da sakrijete vaš odgovor, sve vaše lične informacije će biti uklonjene. {if ($board->anonymizationMode == 'default' && WBB_POST_ANONYMIZATION_MODE != 'fixed') || $board->anonymizationMode != 'fixed'}Vaše korisničko ime će biti nasumično izabrano, ali ostaje isto za čitavu temu.{/if}]]></item>
+	</category>
+	
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canCreateAnonymizedThread"><![CDATA[Može otvoriti skkrivene teme]]></item>
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canCreateAnonymizedPost"><![CDATA[Može napisati skrivene poruke]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.wbb_post_anonymization_require_activation"><![CDATA[Skrivene poruke moraju biti omogućene]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode"><![CDATA[Način skrivanja]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.hash"><![CDATA[Mešavina]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.list"><![CDATA[Skrivena korisnička imena]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.fixed"><![CDATA[Potpuno skriveno]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.description"><![CDATA[<ul>
+			<li>Potpuno skriveno: Svako će se zvati "Anoniman".</li>
+			<li>Skrivena korisnička imena: Svakome će biti dodeljeno skriveno korisničko ime koje će biti sačuvano za temu.</li>
+			<li>Mešavina: Svakome će biti dodeljeno korisničko ime od 12 znakova koje će biti sačuvano za temu. </li>
+		</ul>]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_names"><![CDATA[Skrivena korisnička imena]></item>
+	</category>
+</language>
