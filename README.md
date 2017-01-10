@@ -22,6 +22,6 @@ https://github.com/michaelwb/woltlab_sr_latin/blob/master/sr.xml - Српски 
 ## Остало
 
 Уколико пронађете било какву грешку у преводу, пријавите то у "Issues".
-
+Мој налог на Волтлаб сајту: https://www.woltlab.com/user/1482307-michael/
 
 
