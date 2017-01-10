@@ -21,7 +21,7 @@ https://github.com/michaelwb/woltlab_sr_latin/blob/master/sr.xml - Српски 
 
 ## Остало
 
-//
+Уколико пронађете било какву грешку у преводу, пријавите то у "Issues".
 
 
 
