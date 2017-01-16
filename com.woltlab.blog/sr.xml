@@ -1,49 +1,49 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="sr" languagename="Serbian" countrycode="rs">
 	<category name="blog.acp.menu">
 		<item name="blog.acp.menu.link.blog"><![CDATA[Blog]]></item>
-		<item name="blog.acp.menu.link.blog.category.add"><![CDATA[Add Category]]></item>
-		<item name="blog.acp.menu.link.blog.category.list"><![CDATA[List Categories]]></item>
+		<item name="blog.acp.menu.link.blog.category.add"><![CDATA[Dodaj kategoriju]]></item>
+		<item name="blog.acp.menu.link.blog.category.list"><![CDATA[Lista kategorija]]></item>
 	</category>
 	<category name="blog.blog">
-		<item name="blog.blog.accessLevel"><![CDATA[Can View Blog]]></item>
-		<item name="blog.blog.accessLevel.description"><![CDATA[This blog and its contents should be accessible for the selected users only.]]></item>
-		<item name="blog.blog.accessLevel.everyone"><![CDATA[Everyone]]></item>
-		<item name="blog.blog.accessLevel.following"><![CDATA[Users I’m following]]></item>
-		<item name="blog.blog.accessLevel.owner"><![CDATA[Just Me]]></item>
-		<item name="blog.blog.accessLevel.registered"><![CDATA[Registered Users]]></item>
-		<item name="blog.blog.add"><![CDATA[Create Blog]]></item>
-		<item name="blog.blog.archive"><![CDATA[Archive]]></item>
-		<item name="blog.blog.authors"><![CDATA[More Authors]]></item>
-		<item name="blog.blog.authors.description"><![CDATA[You can add other users as authors, these authors can create new articles and edit existing ones. Separate multiple users with a comma.]]></item>
-		<item name="blog.blog.authors.error.notFound"><![CDATA[Username {$errorData[username]} does not exist.]]></item>
-		<item name="blog.blog.button.add"><![CDATA[Create Blog]]></item>
-		<item name="blog.blog.button.sort"><![CDATA[Sort]]></item>
-		<item name="blog.blog.delete"><![CDATA[Delete]]></item>
-		<item name="blog.blog.delete.confirmMessage"><![CDATA[Do you really want to delete the blog?]]></item>
-		<item name="blog.blog.description.description"><![CDATA[Short description of your blog (maximum 255 characters).]]></item>
-		<item name="blog.blog.description.error.tooLong"><![CDATA[Description is too long, must be below 255 characters.]]></item>
-		<item name="blog.blog.edit"><![CDATA[Edit Blog]]></item>
-		<item name="blog.blog.lastEntry"><![CDATA[Last Article]]></item>
-		<item name="blog.blog.lastUpdateTime"><![CDATA[Last Updated]]></item>
-		<item name="blog.blog.list"><![CDATA[Blogs]]></item>
-		<item name="blog.blog.moreBlogs"><![CDATA[More Blogs]]></item>
-		<item name="blog.blog.otherAuthor.entries"><![CDATA[{#$otherAuthor->entries} article{if $otherAuthor->entries != 1}s{/if}]]></item>
-		<item name="blog.blog.searchAllBlogs"><![CDATA[Search All Blogs]]></item>
-		<item name="blog.blog.searchBlog"><![CDATA[Search Blog]]></item>
-		<item name="blog.blog.showAll"><![CDATA[Display All Blogs]]></item>
-		<item name="blog.blog.subscribers"><![CDATA[Subscribers]]></item>
+		<item name="blog.blog.accessLevel"><![CDATA[Može videti blog]]></item>
+		<item name="blog.blog.accessLevel.description"><![CDATA[Ovaj blog i njen sadržaj treba da bude dostupan samo za izabrane članove.]]></item>
+		<item name="blog.blog.accessLevel.everyone"><![CDATA[Svi]]></item>
+		<item name="blog.blog.accessLevel.following"><![CDATA[Članove koje pratim]]></item>
+		<item name="blog.blog.accessLevel.owner"><![CDATA[Samo ja]]></item>
+		<item name="blog.blog.accessLevel.registered"><![CDATA[Registrovani članovi]]></item>
+		<item name="blog.blog.add"><![CDATA[Kreiraj blog]]></item>
+		<item name="blog.blog.archive"><![CDATA[Arhiva]]></item>
+		<item name="blog.blog.authors"><![CDATA[Više autora]]></item>
+		<item name="blog.blog.authors.description"><![CDATA[Možete dodati druge čanove kao autore, ti autori mogu da napišu nove i izmene već postojeće članke. Odvojite više članova zarezom.]]></item>
+		<item name="blog.blog.authors.error.notFound"><![CDATA[Korisničko ime {$errorData[username]} ne postoji.]]></item>
+		<item name="blog.blog.button.add"><![CDATA[Kreiraj blog]]></item>
+		<item name="blog.blog.button.sort"><![CDATA[Sortiraj]]></item>
+		<item name="blog.blog.delete"><![CDATA[Izbriši]]></item>
+		<item name="blog.blog.delete.confirmMessage"><![CDATA[Da li zaista želite da izbrišete ovaj blog?]]></item>
+		<item name="blog.blog.description.description"><![CDATA[Kratak opis vašeg bloga (maksimalno 255 znakova).]]></item>
+		<item name="blog.blog.description.error.tooLong"><![CDATA[Opis je predugačak, mora biti ispod 255 znakova.]]></item>
+		<item name="blog.blog.edit"><![CDATA[Uredi blog]]></item>
+		<item name="blog.blog.lastEntry"><![CDATA[Poslednji članak]]></item>
+		<item name="blog.blog.lastUpdateTime"><![CDATA[Poslednji put ažurirano]]></item>
+		<item name="blog.blog.list"><![CDATA[Blogovi]]></item>
+		<item name="blog.blog.moreBlogs"><![CDATA[Više blogova]]></item>
+		<item name="blog.blog.otherAuthor.entries"><![CDATA[{#$otherAuthor->entries} članak{if $otherAuthor->entries != 1}a{/if}]]></item>
+		<item name="blog.blog.searchAllBlogs"><![CDATA[Pretraži sve blogove]]></item>
+		<item name="blog.blog.searchBlog"><![CDATA[Pretraži blog]]></item>
+		<item name="blog.blog.showAll"><![CDATA[Prikaži sve blogove]]></item>
+		<item name="blog.blog.subscribers"><![CDATA[Pretplatnici]]></item>
 	</category>
 	<category name="blog.category">
-		<item name="blog.category.delete.sure"><![CDATA[Do you really want to delete this category? All child categories of this category will be moved to this category's parent category. Articles which are only in this category will be deleted.]]></item>
+		<item name="blog.category.delete.sure"><![CDATA[Da li zaista želite da obrišete ovu kategoriju? Sve kategorije u toj kategoriji će biti premeštene u glavnoj kategoriji. Članci koji su samo u toj kategoriji će biti izbrisani.]]></item>
 	</category>
 	<category name="blog.entry">
-		<item name="blog.entry.add"><![CDATA[Add Blog Article]]></item>
+		<item name="blog.entry.add"><![CDATA[Napiši članak]]></item>
 		<item name="blog.entry.blog"><![CDATA[Blog]]></item>
-		<item name="blog.entry.button.add"><![CDATA[Create Article]]></item>
-		<item name="blog.entry.button.publish"><![CDATA[Publish]]></item>
-		<item name="blog.entry.button.saveAsDraft"><![CDATA[Save Draft]]></item>
-		<item name="blog.entry.categories"><![CDATA[Categories]]></item>
+		<item name="blog.entry.button.add"><![CDATA[Dodaj članak]]></item>
+		<item name="blog.entry.button.publish"><![CDATA[Objavi]]></item>
+		<item name="blog.entry.button.saveAsDraft"><![CDATA[Sačuvaj]]></item>
+		<item name="blog.entry.categories"><![CDATA[Kategorije]]></item>
 		<item name="blog.entry.categories.error.tooMany"><![CDATA[You have selected to many categories. You may select up to {@BLOG_ENTRY_MAX_CATEGORIES} {if BLOG_ENTRY_MAX_CATEGORIES == 1}category{else}categories{/if}.]]></item>
 		<item name="blog.entry.categorizedEntries"><![CDATA[Articles From Category “{$category->getTitle()}”]]></item>
 		<item name="blog.entry.comment"><![CDATA[Article Comment]]></item>
