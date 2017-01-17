@@ -146,189 +146,189 @@
 		<item name="blog.entry.restore"><![CDATA[Povrati]]></item>
 		<item name="blog.entry.searchEntries"><![CDATA[Pretraži Članke]]></item>
 		<item name="blog.entry.setAsFeatured"><![CDATA[Označi kao “Istaknuto”]]></item>
-		<item name="blog.entry.showUserEntries"><![CDATA[Prikaži Članke od strane člana {$user->username}]]></item>
+		<item name="blog.entry.showUserEntries"><![CDATA[Prikaži Članke od strane {$user->username}]]></item>
 		<item name="blog.entry.trash"><![CDATA[Premesti u korpu za otpatke]]></item>
 		<item name="blog.entry.trash.confirmMessage"><![CDATA[Da li zaista želite da premestite ovaj članak u korpu za otpatke?]]></item>
 		<item name="blog.entry.trash.reason"><![CDATA[Razlog (opciono)]]></item>
 		<item name="blog.entry.unreadEntries"><![CDATA[Nepročitani Članci]]></item>
-		<item name="blog.entry.unsetAsFeatured"><![CDATA[Remove “Featured”-Marking]]></item>
-		<item name="blog.entry.userEntries"><![CDATA[Articles by {$user->username}]]></item>
-		<item name="blog.entry.views"><![CDATA[Views]]></item>
-		<item name="blog.entry.views.count"><![CDATA[{#$entry->views} time{if $entry->views != 1}s{/if} read]]></item>
-		<item name="blog.entry.watchedEntries"><![CDATA[Watched Articles]]></item>
-		<item name="blog.entry.watchedEntries.noEntries"><![CDATA[There are no watched articles yet.]]></item>
+		<item name="blog.entry.unsetAsFeatured"><![CDATA[Ukloni znak “Istaknuto”]]></item>
+		<item name="blog.entry.userEntries"><![CDATA[Članci od strane {$user->username}]]></item>
+		<item name="blog.entry.views"><![CDATA[Pregleda]]></item>
+		<item name="blog.entry.views.count"><![CDATA[{#$entry->views} put{if $entry->views != 1}a{/if} pročitano]]></item>
+		<item name="blog.entry.watchedEntries"><![CDATA[Članke Koje Pratite]]></item>
+		<item name="blog.entry.watchedEntries.noEntries"><![CDATA[Trenutno ne pratite nijedan članak.]]></item>
 	</category>
 	<category name="blog.header">
 		<item name="blog.header.menu.blog"><![CDATA[Blog]]></item>
-		<item name="blog.header.menu.blogs"><![CDATA[Blogs]]></item>
-		<item name="blog.header.menu.entries"><![CDATA[Articles]]></item>
-		<item name="blog.header.menu.myBlogs"><![CDATA[My Blogs]]></item>
-		<item name="blog.header.menu.unreadEntries"><![CDATA[Unread Articles]]></item>
-		<item name="blog.header.menu.watchedEntries"><![CDATA[Watched Articles]]></item>
+		<item name="blog.header.menu.blogs"><![CDATA[Blogovi]]></item>
+		<item name="blog.header.menu.entries"><![CDATA[Članci]]></item>
+		<item name="blog.header.menu.myBlogs"><![CDATA[Moji Blogovi]]></item>
+		<item name="blog.header.menu.unreadEntries"><![CDATA[Nepročitani Članci]]></item>
+		<item name="blog.header.menu.watchedEntries"><![CDATA[Članci Koje Pratite]]></item>
 	</category>
 	<category name="blog.index">
-		<item name="blog.index.copyright"><![CDATA[<a href="http://www.woltlab.com"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>Blog-Software: <strong>WoltLab Blog&trade;{if SHOW_VERSION_NUMBER} {@PACKAGE_VERSION}{/if}</strong>, developed by <strong>WoltLab&reg; GmbH</strong></a>]]></item>
-		<item name="blog.index.evaluation"><![CDATA[This software is a test version. The running time is limited until <strong>{@BLOG_EVALUATION_END|plainTime}</strong>{if BLOG_EVALUATION_END > TIME_NOW} ({@BLOG_EVALUATION_END|dateDiff:TIME_NOW:true}){/if}.
-		For a legal use of this software beyond that time limit you need to <a href="https://www.woltlab.com">purchase a license</a>, or delete the software and its contents immediately.]]></item>
-		<item name="blog.index.news"><![CDATA[News]]></item>
-		<item name="blog.index.stats"><![CDATA[Statistics]]></item>
-		<item name="blog.index.stats.detail"><![CDATA[{#$stats[authors]} Author{if $stats[authors] != 1}s{/if} - {#$stats[entries]} Article{if $stats[entries] != 1}s{/if} ({#$stats[entriesPerDay]} Articles per Day) - {#$stats[comments]} Comment{if $stats[comments] != 1}s{/if}]]></item>
+		<item name="blog.index.copyright"><![CDATA[<a href="http://www.woltlab.com"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>Softver: <strong>WoltLab Blog&trade;{if SHOW_VERSION_NUMBER} {@PACKAGE_VERSION}{/if}</strong>, razvijen od strane <strong>WoltLab&reg; GmbH</strong></a>]]></item>
+		<item name="blog.index.evaluation"><![CDATA[Ovaj softver je test verzija. Trajanje je ograničeno do <strong>{@BLOG_EVALUATION_END|plainTime}</strong>{if BLOG_EVALUATION_END > TIME_NOW} ({@BLOG_EVALUATION_END|dateDiff:TIME_NOW:true}){/if}.
+		Za zakonito korišćenje ovog softvera izvan roka morate <a href="https://www.woltlab.com">da kupite licencu</a>, ili odmah izbrišite softver i njegov sadržaj.]]></item>
+		<item name="blog.index.news"><![CDATA[Novosti]]></item>
+		<item name="blog.index.stats"><![CDATA[Statistika]]></item>
+		<item name="blog.index.stats.detail"><![CDATA[{#$stats[authors]} Autor{if $stats[authors] != 1}i{/if} - {#$stats[entries]} Članak{if $stats[entries] != 1}Članci{/if} ({#$stats[entriesPerDay]} Članaka po danu) - {#$stats[comments]} Komentar{if $stats[comments] != 1}a{/if}]]></item>
 	</category>
 	<category name="blog.search">
-		<item name="blog.search.categories"><![CDATA[Search in Categories]]></item>
+		<item name="blog.search.categories"><![CDATA[Traži po kategorijama]]></item>
 	</category>
 	<category name="blog.user">
-		<item name="blog.user.usersOnline.location.BlogEntryListPage"><![CDATA[Viewing the <a href="{link controller='BlogEntryList' application='blog' object=$blog}{/link}">articles in the blog “{$blog->title}”</a>]]></item>
-		<item name="blog.user.usersOnline.location.BlogListPage"><![CDATA[Viewing the list of blogs]]></item>
-		<item name="blog.user.usersOnline.location.BlogPage"><![CDATA[Viewing the blog index]]></item>
-		<item name="blog.user.usersOnline.location.EntryAddForm"><![CDATA[Creating an article]]></item>
-		<item name="blog.user.usersOnline.location.EntryEditForm"><![CDATA[Editing article <a href="{link controller='Entry' application='blog' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>]]></item>
-		<item name="blog.user.usersOnline.location.EntryListPage.categorizedEntries"><![CDATA[Viewing <a href="{link controller='EntryList' application='blog' object=$category}{/link}">articles of category “{$category->getTitle()}”</a>]]></item>
-		<item name="blog.user.usersOnline.location.EntryListPage.userEntries"><![CDATA[Viewing <a href="{link controller='EntryList' application='blog'}userID={@$user->userID}{/link}">articles by {$user->username}</a>]]></item>
-		<item name="blog.user.usersOnline.location.EntryPage"><![CDATA[Reading article <a href="{link controller='Entry' application='blog' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>]]></item>
+		<item name="blog.user.usersOnline.location.BlogEntryListPage"><![CDATA[Čita <a href="{link controller='BlogEntryList' application='blog' object=$blog}{/link}">članke“{$blog->title}”</a>]]></item>
+		<item name="blog.user.usersOnline.location.BlogListPage"><![CDATA[Gleda listu blogova]]></item>
+		<item name="blog.user.usersOnline.location.BlogPage"><![CDATA[Gleda početnu stranicu bloga]]></item>
+		<item name="blog.user.usersOnline.location.EntryAddForm"><![CDATA[Piše članak]]></item>
+		<item name="blog.user.usersOnline.location.EntryEditForm"><![CDATA[Uređuje članak <a href="{link controller='Entry' application='blog' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>]]></item>
+		<item name="blog.user.usersOnline.location.EntryListPage.categorizedEntries"><![CDATA[Čita <a href="{link controller='EntryList' application='blog' object=$category}{/link}">članke iz kategorije “{$category->getTitle()}”</a>]]></item>
+		<item name="blog.user.usersOnline.location.EntryListPage.userEntries"><![CDATA[Čita <a href="{link controller='EntryList' application='blog'}userID={@$user->userID}{/link}">članke od strane {$user->username}</a>]]></item>
+		<item name="blog.user.usersOnline.location.EntryPage"><![CDATA[Čita članak <a href="{link controller='Entry' application='blog' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>]]></item>
 	</category>
 	<category name="wcf.acl.option">
-		<item name="wcf.acl.option.com.woltlab.blog.category.canUseCategory"><![CDATA[Can add entries to this category]]></item>
-		<item name="wcf.acl.option.com.woltlab.blog.category.canViewCategory"><![CDATA[Can view category]]></item>
+		<item name="wcf.acl.option.com.woltlab.blog.category.canUseCategory"><![CDATA[Mogu dodati stavke u ovoj kategoriji]]></item>
+		<item name="wcf.acl.option.com.woltlab.blog.category.canViewCategory"><![CDATA[Mogu videti kategoriju]]></item>
 	</category>
 	<category name="wcf.acp.ad">
 		<item name="wcf.acp.ad.location.category.com.woltlab.blog.entry"><![CDATA[Blog]]></item>
-		<item name="wcf.acp.ad.location.com.woltlab.blog.entry.inEntryMessage"><![CDATA[In the entry message]]></item>
+		<item name="wcf.acp.ad.location.com.woltlab.blog.entry.inEntryMessage"><![CDATA[U ulaznoj poruci]]></item>
 	</category>
 	<category name="wcf.acp.cronjob">
-		<item name="wcf.acp.cronjob.description.cronjob13"><![CDATA[Publishes delayed blog entries]]></item>
+		<item name="wcf.acp.cronjob.description.cronjob13"><![CDATA[Objavljuje odložene blogove]]></item>
 	</category>
 	<category name="wcf.acp.dataImport">
-		<item name="wcf.acp.dataImport.data.com.woltlab.blog.blog"><![CDATA[Blogs]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.blog.category"><![CDATA[Blog categories]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry"><![CDATA[Blog articles]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.attachment"><![CDATA[Blog attachments]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment"><![CDATA[Blog comments]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment.response"><![CDATA[Blog comment replies]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.like"><![CDATA[Blog likes]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.blog"><![CDATA[Blogovi]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.category"><![CDATA[Kategorije bloga]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry"><![CDATA[Članci na blogu]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.attachment"><![CDATA[Prilozi na blogu]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment"><![CDATA[Komentari na blogu]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment.response"><![CDATA[Odgovori na komentare na blogu]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.like"><![CDATA[Sviđanja na blogu]]></item>
 	</category>
 	<category name="wcf.acp.group">
-		<item name="wcf.acp.group.option.admin.blog.canManageCategory"><![CDATA[Can manage categories]]></item>
+		<item name="wcf.acp.group.option.admin.blog.canManageCategory"><![CDATA[Mogu upravljati kategorijama]]></item>
 		<item name="wcf.acp.group.option.category.admin.blog"><![CDATA[Blog]]></item>
 		<item name="wcf.acp.group.option.category.mod.blog"><![CDATA[Blog]]></item>
 		<item name="wcf.acp.group.option.category.user.blog"><![CDATA[Blog]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canDeleteComment"><![CDATA[Can delete comments]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canDeleteEntry"><![CDATA[Can move articles to trash]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canDeleteEntryCompletely"><![CDATA[Can delete articles]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canEditComment"><![CDATA[Can edit comments]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canEditEntry"><![CDATA[Can edit articles]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canModerateComment"><![CDATA[Can moderate comments]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canModerateEntry"><![CDATA[Can moderate articles]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canRestoreEntry"><![CDATA[Can restore articles]]></item>
-		<item name="wcf.acp.group.option.mod.blog.canViewDeletedEntry"><![CDATA[Can view deleted articles]]></item>
-		<item name="wcf.acp.group.option.user.blog.canAddComment"><![CDATA[Can create comments]]></item>
-		<item name="wcf.acp.group.option.user.blog.canCreateEntry"><![CDATA[Can write articles]]></item>
-		<item name="wcf.acp.group.option.user.blog.canCreateEntryWithoutModeration"><![CDATA[Can write articles without approval]]></item>
-		<item name="wcf.acp.group.option.user.blog.canDeleteComment"><![CDATA[Can delete their own comments]]></item>
-		<item name="wcf.acp.group.option.user.blog.canDeleteEntry"><![CDATA[Can delete their own articles]]></item>
-		<item name="wcf.acp.group.option.user.blog.canDisableCommentFunction"><![CDATA[Can disable comments for their own articles]]></item>
-		<item name="wcf.acp.group.option.user.blog.canDownloadAttachment"><![CDATA[Can download attachments]]></item>
-		<item name="wcf.acp.group.option.user.blog.canEditComment"><![CDATA[Can edit their own comments]]></item>
-		<item name="wcf.acp.group.option.user.blog.canEditEntry"><![CDATA[Can edit their own articles]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteComment"><![CDATA[Mogu izbrisati komentare]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteEntry"><![CDATA[Mogu premestiti članke u korpu za otpatke]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteEntryCompletely"><![CDATA[Mogu izbrisati članke]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canEditComment"><![CDATA[Mogu urediti komentare]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canEditEntry"><![CDATA[Mogu urediti članke]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canModerateComment"><![CDATA[Mogu sređivati komentare]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canModerateEntry"><![CDATA[Mogu sređivati članke]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canRestoreEntry"><![CDATA[Mogu povratiti članke]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canViewDeletedEntry"><![CDATA[Mogu videti izbrisane članke]]></item>
+		<item name="wcf.acp.group.option.user.blog.canAddComment"><![CDATA[Mogu pisati komentare]]></item>
+		<item name="wcf.acp.group.option.user.blog.canCreateEntry"><![CDATA[Mogu pisati članke]]></item>
+		<item name="wcf.acp.group.option.user.blog.canCreateEntryWithoutModeration"><![CDATA[Mogu pisati članke bez odobrenja moderatora]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDeleteComment"><![CDATA[Mogu izbrisati svoje komentare]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDeleteEntry"><![CDATA[Mogu izbrisati svoje članke]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDisableCommentFunction"><![CDATA[Mogu onemogućiti komentare na svojim člancima]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDownloadAttachment"><![CDATA[Mogu preuzeti priloge]]></item>
+		<item name="wcf.acp.group.option.user.blog.canEditComment"><![CDATA[Mogu urediti svoje komentare]]></item>
+		<item name="wcf.acp.group.option.user.blog.canEditEntry"><![CDATA[Mogu urediti svoje članke]]></item>
 		<item name="wcf.acp.group.option.user.blog.canEditEntryDate"><![CDATA[Can edit article date]]></item>
-		<item name="wcf.acp.group.option.user.blog.canReadEntry"><![CDATA[Can read articles]]></item>
-		<item name="wcf.acp.group.option.user.blog.canRestrictBlogAccess"><![CDATA[Can restrict blog access]]></item>
-		<item name="wcf.acp.group.option.user.blog.canStartPoll"><![CDATA[Can start polls]]></item>
-		<item name="wcf.acp.group.option.user.blog.canStartPublicPoll"><![CDATA[Can start public polls]]></item>
-		<item name="wcf.acp.group.option.user.blog.canUploadAttachment"><![CDATA[Can upload attachments]]></item>
-		<item name="wcf.acp.group.option.user.blog.canViewAttachmentPreview"><![CDATA[Can view attachment previews]]></item>
-		<item name="wcf.acp.group.option.user.blog.canVotePoll"><![CDATA[Can participate in polls]]></item>
-		<item name="wcf.acp.group.option.user.blog.editTimeout"><![CDATA[Article Edit Time Period]]></item>
-		<item name="wcf.acp.group.option.user.blog.editTimeout.description"><![CDATA[Minutes allowed for users to edit their own articles. Use -1 for infinite.]]></item>
-		<item name="wcf.acp.group.option.user.blog.maxBlogs"><![CDATA[Maximum Number of Blogs]]></item>
-		<item name="wcf.acp.group.option.user.blog.maxEntryLength"><![CDATA[Maximum Article Length]]></item>
+		<item name="wcf.acp.group.option.user.blog.canReadEntry"><![CDATA[Mogu čitati članke]]></item>
+		<item name="wcf.acp.group.option.user.blog.canRestrictBlogAccess"><![CDATA[Mogu ograničiti pristup blogu]]></item>
+		<item name="wcf.acp.group.option.user.blog.canStartPoll"><![CDATA[Mogu započeti nove ankete]]></item>
+		<item name="wcf.acp.group.option.user.blog.canStartPublicPoll"><![CDATA[Mogu započeti javne ankete]]></item>
+		<item name="wcf.acp.group.option.user.blog.canUploadAttachment"><![CDATA[Mogu otpremiti priloge]]></item>
+		<item name="wcf.acp.group.option.user.blog.canViewAttachmentPreview"><![CDATA[Mogu videti prikaz priloga]]></item>
+		<item name="wcf.acp.group.option.user.blog.canVotePoll"><![CDATA[Mogu učestvovati u anketama]]></item>
+		<item name="wcf.acp.group.option.user.blog.editTimeout"><![CDATA[Uredi vremenski period prestanka mogućnosti uređivanja svojih članaka]]></item>
+		<item name="wcf.acp.group.option.user.blog.editTimeout.description"><![CDATA[Koliko minuta je dozvoljeno uređivanje svojih članaka. Korisite -1 za beskonačno.]]></item>
+		<item name="wcf.acp.group.option.user.blog.maxBlogs"><![CDATA[Maksimalan Broj Blogova]]></item>
+		<item name="wcf.acp.group.option.user.blog.maxEntryLength"><![CDATA[Maksimalna Dužina Članka]]></item>
 	</category>
 	<category name="wcf.acp.index">
-		<item name="wcf.acp.index.system.software.blogVersion"><![CDATA[WoltLab Blog&trade; Version]]></item>
+		<item name="wcf.acp.index.system.software.blogVersion"><![CDATA[WoltLab Blog&trade; Verzija]]></item>
 	</category>
 	<category name="wcf.acp.option">
-		<item name="wcf.acp.option.blog_dashboard_box_latest_entries"><![CDATA[Number of Articles]]></item>
-		<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries"><![CDATA[Number of Comments]]></item>
-		<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries_period"><![CDATA[Time Period]]></item>
-		<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries_period.description"><![CDATA[“Most Commented Articles” are considered if created by the following days.]]></item>
-		<item name="wcf.acp.option.blog_entries_per_page"><![CDATA[Articles per Page]]></item>
-		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[Prune Trash]]></item>
-		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Articles are removed from the trash by the following days. Use 0 to disable.]]></item>
-		<item name="wcf.acp.option.blog_entry_max_categories"><![CDATA[Maximum Categories]]></item>
-		<item name="wcf.acp.option.blog_entry_max_categories.description"><![CDATA[The maximum number of categories allowed per article.]]></item>
-		<item name="wcf.acp.option.blog_excerpt_length"><![CDATA[Excerpt Length]]></item>
-		<item name="wcf.acp.option.blog_index_enable_online_list"><![CDATA[Display “Users Online” list]]></item>
-		<item name="wcf.acp.option.blog_index_enable_stats"><![CDATA[Display blog statistics]]></item>
-		<item name="wcf.acp.option.blog_index_entries"><![CDATA[Number of Articles]]></item>
-		<item name="wcf.acp.option.blog_index_entries.description"><![CDATA[The number of articles presented on the blog index.]]></item>
-		<item name="wcf.acp.option.blog_index_entries_period"><![CDATA[Time Period]]></item>
-		<item name="wcf.acp.option.blog_index_entries_period.description"><![CDATA[“Latest Articles” and presented articles are considered if created by the following days. Use 0 for infinite.]]></item>
-		<item name="wcf.acp.option.blog_index_entry_categories"><![CDATA[Filter by Category]]></item>
-		<item name="wcf.acp.option.blog_index_entry_categories.description"><![CDATA[Only articles assigned to the selected categories are displayed on the blog index.]]></item>
-		<item name="wcf.acp.option.blog_message_sidebar_enable_user_entries"><![CDATA[Display author’s article count]]></item>
-		<item name="wcf.acp.option.blog_news_blog_id"><![CDATA[Blogs]]></item>
-		<item name="wcf.acp.option.blog_news_blog_id.description"><![CDATA[Articles from the following blog(s) will be displayed as “News” on the Dashboard.]]></item>
-		<item name="wcf.acp.option.blog_news_items"><![CDATA[Number of News]]></item>
-		<item name="wcf.acp.option.blog_user_profile_enable_user_entries"><![CDATA[Display user’s article count in profile sidebar]]></item>
+		<item name="wcf.acp.option.blog_dashboard_box_latest_entries"><![CDATA[Broj Članaka]]></item>
+		<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries"><![CDATA[Broj Komentara]]></item>
+		<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries_period"><![CDATA[Vremenski period]]></item>
+		<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries_period.description"><![CDATA[“Članci sa najviše komentara” se računaju ukoliko su napisani narednih dana.]]></item>
+		<item name="wcf.acp.option.blog_entries_per_page"><![CDATA[Broj članaka po strani]]></item>
+		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[Isprazni kantu za otpatke]]></item>
+		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Članci su uklonjeni iz kante za otpatke narednih nekoliko dana.]]></item>
+		<item name="wcf.acp.option.blog_entry_max_categories"><![CDATA[Maksimalni Broj Kategorija]]></item>
+		<item name="wcf.acp.option.blog_entry_max_categories.description"><![CDATA[Maksimalni broj kategorija po članku.]]></item>
+		<item name="wcf.acp.option.blog_excerpt_length"><![CDATA[Izvedi Dužinu]]></item>
+		<item name="wcf.acp.option.blog_index_enable_online_list"><![CDATA[Prikaži listu “Trenutno aktivni članovi”]]></item>
+		<item name="wcf.acp.option.blog_index_enable_stats"><![CDATA[Prikaži statistiku bloga]]></item>
+		<item name="wcf.acp.option.blog_index_entries"><![CDATA[Broj Članaka]]></item>
+		<item name="wcf.acp.option.blog_index_entries.description"><![CDATA[Broj članaka prikazan na početnoj strani bloga.]]></item>
+		<item name="wcf.acp.option.blog_index_entries_period"><![CDATA[Vremenski Period]]></item>
+		<item name="wcf.acp.option.blog_index_entries_period.description"><![CDATA[“Najnoviji Članci” and presented articles are considered if created by the following days. Use 0 for infinite.]]></item>
+		<item name="wcf.acp.option.blog_index_entry_categories"><![CDATA[Filtriraj po kategoriji]]></item>
+		<item name="wcf.acp.option.blog_index_entry_categories.description"><![CDATA[Samo članci koji su dodeljeni izabranim kategorijama su prikazani na početnoj strani bloga.]]></item>
+		<item name="wcf.acp.option.blog_message_sidebar_enable_user_entries"><![CDATA[Prikaži broj članaka po autoru]]></item>
+		<item name="wcf.acp.option.blog_news_blog_id"><![CDATA[Blogovi]]></item>
+		<item name="wcf.acp.option.blog_news_blog_id.description"><![CDATA[Članci iz izabranih blogove će biti prikazani kao "Novosti" na početnoj stranici.]]></item>
+		<item name="wcf.acp.option.blog_news_items"><![CDATA[Broj Novosti]]></item>
+		<item name="wcf.acp.option.blog_user_profile_enable_user_entries"><![CDATA[Prikaži broj članaka po članu na bočnoj traci]]></item>
 		<item name="wcf.acp.option.category.blog"><![CDATA[Blog]]></item>
-		<item name="wcf.acp.option.category.blog.entry"><![CDATA[Article]]></item>
-		<item name="wcf.acp.option.category.blog.index"><![CDATA[Blog Index]]></item>
-		<item name="wcf.acp.option.category.dashboard.content.entriesAsNews"><![CDATA[Blog Articles as News]]></item>
-		<item name="wcf.acp.option.category.dashboard.sidebar.latestEntries"><![CDATA[Latest Articles]]></item>
-		<item name="wcf.acp.option.category.dashboard.sidebar.mostCommentedEntries"><![CDATA[Most Commented Articles]]></item>
+		<item name="wcf.acp.option.category.blog.entry"><![CDATA[Članak]]></item>
+		<item name="wcf.acp.option.category.blog.index"><![CDATA[Početna strana bloga]]></item>
+		<item name="wcf.acp.option.category.dashboard.content.entriesAsNews"><![CDATA[Članci Bloga kao Novosti]]></item>
+		<item name="wcf.acp.option.category.dashboard.sidebar.latestEntries"><![CDATA[Najnoviji članci]]></item>
+		<item name="wcf.acp.option.category.dashboard.sidebar.mostCommentedEntries"><![CDATA[Članci sa najviše komentara]]></item>
 	</category>
 	<category name="wcf.acp.rebuildData">
-		<item name="wcf.acp.rebuildData.com.woltlab.blog.blog"><![CDATA[Rebuild Blogs]]></item>
-		<item name="wcf.acp.rebuildData.com.woltlab.blog.blog.description"><![CDATA[Rebuilds the blog statistics.]]></item>
-		<item name="wcf.acp.rebuildData.com.woltlab.blog.entry"><![CDATA[Rebuild Blog Articles]]></item>
-		<item name="wcf.acp.rebuildData.com.woltlab.blog.entry.description"><![CDATA[Rebuilds the article search index and recalculates the activity points.]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.blog.blog"><![CDATA[Obnovi Blogove]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.blog.blog.description"><![CDATA[Obnovi statistiku bloga]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.blog.entry"><![CDATA[Obnovi članke bloga]]></item>
+		<item name="wcf.acp.rebuildData.com.woltlab.blog.entry.description"><![CDATA[Obnavlja indeks članka u pretrazi i ponovo izračunava bodove aktivnosti.]]></item>
 	</category>
 	<category name="wcf.acp.stat">
 		<item name="wcf.acp.stat.category.com.woltlab.blog"><![CDATA[WoltLab Blog]]></item>
-		<item name="wcf.acp.stat.com.woltlab.blog.entry"><![CDATA[Blog Articles]]></item>
-		<item name="wcf.acp.stat.com.woltlab.blog.entryComment"><![CDATA[Blog Article Comments]]></item>
+		<item name="wcf.acp.stat.com.woltlab.blog.entry"><![CDATA[Članci na Blogu]]></item>
+		<item name="wcf.acp.stat.com.woltlab.blog.entryComment"><![CDATA[Komentari članka na blogu]]></item>
 	</category>
 	<category name="wcf.dashboard">
-		<item name="wcf.dashboard.box.com.woltlab.blog.categories"><![CDATA[Categories]]></item>
-		<item name="wcf.dashboard.box.com.woltlab.blog.entriesAsNews"><![CDATA[Blog Articles as News]]></item>
-		<item name="wcf.dashboard.box.com.woltlab.blog.latestEntries"><![CDATA[Latest Articles]]></item>
-		<item name="wcf.dashboard.box.com.woltlab.blog.latestUpdatedBlogs"><![CDATA[Latest Updated Blogs]]></item>
-		<item name="wcf.dashboard.box.com.woltlab.blog.mostCommentedEntries"><![CDATA[Most Commented Articles]]></item>
-		<item name="wcf.dashboard.box.com.woltlab.blog.tagCloud"><![CDATA[Tags]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.blog.categories"><![CDATA[Kategorije]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.blog.entriesAsNews"><![CDATA[Članci bloga kao novosti]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.blog.latestEntries"><![CDATA[Najnoviji Članci]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.blog.latestUpdatedBlogs"><![CDATA[Ažurirani Blogovi]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.blog.mostCommentedEntries"><![CDATA[Članci sa najviše komentara]]></item>
+		<item name="wcf.dashboard.box.com.woltlab.blog.tagCloud"><![CDATA[Oznake]]></item>
 		<item name="wcf.dashboard.box.com.woltlab.blog.topBlogs"><![CDATA[Top Blogs]]></item>
-		<item name="wcf.dashboard.objectType.com.woltlab.blog.BlogListPage"><![CDATA[Blog List]]></item>
-		<item name="wcf.dashboard.objectType.com.woltlab.blog.BlogPage"><![CDATA[Blog Index]]></item>
-		<item name="wcf.dashboard.objectType.com.woltlab.blog.EntryListPage"><![CDATA[Blog Article List]]></item>
+		<item name="wcf.dashboard.objectType.com.woltlab.blog.BlogListPage"><![CDATA[Lista Blogova]]></item>
+		<item name="wcf.dashboard.objectType.com.woltlab.blog.BlogPage"><![CDATA[Početna Strana Bloga]]></item>
+		<item name="wcf.dashboard.objectType.com.woltlab.blog.EntryListPage"><![CDATA[Lista Članaka na Blogu]]></item>
 	</category>
 	<category name="wcf.like">
-		<item name="wcf.like.objectType.com.woltlab.blog.likeableEntry"><![CDATA[Blog Article]]></item>
-		<item name="wcf.like.title.com.woltlab.blog.entryComment"><![CDATA[{if $like->isDislike()}Dislikes{else}Likes{/if} the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on the blog article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="wcf.like.title.com.woltlab.blog.entryComment.response"><![CDATA[{if $like->isDislike()}Dislikes{else}Likes{/if} the response by {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}a guest{/if} on the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on the blog article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="wcf.like.title.com.woltlab.blog.likeableEntry"><![CDATA[{if $like->isDislike()}Dislikes{else}Likes{/if} the article <a href="{link application='blog' controller='Entry' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
+		<item name="wcf.like.objectType.com.woltlab.blog.likeableEntry"><![CDATA[Članak na Blogu]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.entryComment"><![CDATA[{if $like->isDislike()}Kaže da mu/joj se ne sviđa{else}Kaže da mu/joj se sviđa{/if} komentar od strane {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}gosta{/if} na članku bloga <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.entryComment.response"><![CDATA[{if $like->isDislike()}Kaže da mu/joj se ne sviđa{else}Kaže da mu/joj se sviđa{/if} odgovor od strane {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}gosta{/if} na komentaru od strane {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}gosta{/if} na članku bloga <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.likeableEntry"><![CDATA[{if $like->isDislike()}Kaže da mu/joj se ne sviđa{else}Kaže da mu/joj se sviđa{/if} članak <a href="{link application='blog' controller='Entry' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
 	</category>
 	<category name="wcf.moderation">
-		<item name="wcf.moderation.deletedContent.com.woltlab.blog.entry"><![CDATA[Trashed Articles]]></item>
-		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.blog.entry"><![CDATA[Blog Articles]]></item>
-		<item name="wcf.moderation.type.com.woltlab.blog.entry"><![CDATA[Blog Article]]></item>
+		<item name="wcf.moderation.deletedContent.com.woltlab.blog.entry"><![CDATA[Članci u korpi za otpatke]]></item>
+		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.blog.entry"><![CDATA[Članci Bloga]]></item>
+		<item name="wcf.moderation.type.com.woltlab.blog.entry"><![CDATA[Članci na Blogu]]></item>
 	</category>
 	<category name="wcf.page">
 		<item name="wcf.page.category.com.woltlab.blog"><![CDATA[WoltLab Blog]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogAddForm"><![CDATA[Create Blog]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogEditForm"><![CDATA[Edit Blog]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogEntryListPage"><![CDATA[List of Articles in a Blog]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogListPage"><![CDATA[List of Blogs]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogPage"><![CDATA[Blog List]]></item>
-		<item name="wcf.page.com.woltlab.blog.EntryAddForm"><![CDATA[Add Article]]></item>
-		<item name="wcf.page.com.woltlab.blog.EntryEditForm"><![CDATA[Edit Article]]></item>
-		<item name="wcf.page.com.woltlab.blog.EntryListPage"><![CDATA[Articles]]></item>
-		<item name="wcf.page.com.woltlab.blog.EntryPage"><![CDATA[Article]]></item>
-		<item name="wcf.page.com.woltlab.blog.UnreadEntryListPage"><![CDATA[Unread Articles]]></item>
-		<item name="wcf.page.com.woltlab.blog.WatchedEntryListPage"><![CDATA[Watched Articles]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogAddForm"><![CDATA[Kreiraj Blog]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogEditForm"><![CDATA[Uredi Blog]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogEntryListPage"><![CDATA[Lista Članaka na Blogu]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogListPage"><![CDATA[Lista Blogova]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogPage"><![CDATA[Lista Blogova]]></item>
+		<item name="wcf.page.com.woltlab.blog.EntryAddForm"><![CDATA[Napiši Članak]]></item>
+		<item name="wcf.page.com.woltlab.blog.EntryEditForm"><![CDATA[Uredi Članak]]></item>
+		<item name="wcf.page.com.woltlab.blog.EntryListPage"><![CDATA[Članci]]></item>
+		<item name="wcf.page.com.woltlab.blog.EntryPage"><![CDATA[Članak]]></item>
+		<item name="wcf.page.com.woltlab.blog.UnreadEntryListPage"><![CDATA[Nepročitani Članci]]></item>
+		<item name="wcf.page.com.woltlab.blog.WatchedEntryListPage"><![CDATA[Članci Koje Pratite]]></item>
 		<item name="wcf.page.sitemap.blog"><![CDATA[Blog]]></item>
 	</category>
 	<category name="wcf.search">
-		<item name="wcf.search.object.com.woltlab.blog.entry"><![CDATA[Article]]></item>
-		<item name="wcf.search.type.com.woltlab.blog.entry"><![CDATA[Articles]]></item>
+		<item name="wcf.search.object.com.woltlab.blog.entry"><![CDATA[Članak]]></item>
+		<item name="wcf.search.type.com.woltlab.blog.entry"><![CDATA[Članke]]></item>
 	</category>
 	<category name="wcf.tagging">
 		<item name="wcf.tagging.objectType.com.woltlab.blog.entry"><![CDATA[Articles]]></item>
