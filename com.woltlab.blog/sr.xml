@@ -31,27 +31,27 @@
 		<item name="blog.blog.otherAuthor.entries"><![CDATA[{#$otherAuthor->entries} članak{if $otherAuthor->entries != 1}a{/if}]]></item>
 		<item name="blog.blog.searchAllBlogs"><![CDATA[Pretraži sve blogove]]></item>
 		<item name="blog.blog.searchBlog"><![CDATA[Pretraži blog]]></item>
-		<item name="blog.blog.showAll"><![CDATA[Prikaži sve blogove]]></item>
+		<item name="blog.blog.showAll"><![CDATA[Prikaži Sve Blogove]]></item>
 		<item name="blog.blog.subscribers"><![CDATA[Pretplatnici]]></item>
 	</category>
 	<category name="blog.category">
 		<item name="blog.category.delete.sure"><![CDATA[Da li zaista želite da obrišete ovu kategoriju? Sve kategorije u toj kategoriji će biti premeštene u glavnoj kategoriji. Članci koji su samo u toj kategoriji će biti izbrisani.]]></item>
 	</category>
 	<category name="blog.entry">
-		<item name="blog.entry.add"><![CDATA[Napiši članak]]></item>
+		<item name="blog.entry.add"><![CDATA[Napiši Članak]]></item>
 		<item name="blog.entry.blog"><![CDATA[Blog]]></item>
-		<item name="blog.entry.button.add"><![CDATA[Dodaj članak]]></item>
+		<item name="blog.entry.button.add"><![CDATA[Dodaj Članak]]></item>
 		<item name="blog.entry.button.publish"><![CDATA[Objavi]]></item>
 		<item name="blog.entry.button.saveAsDraft"><![CDATA[Sačuvaj]]></item>
 		<item name="blog.entry.categories"><![CDATA[Kategorije]]></item>
-		<item name="blog.entry.categories.error.tooMany"><![CDATA[You have selected to many categories. You may select up to {@BLOG_ENTRY_MAX_CATEGORIES} {if BLOG_ENTRY_MAX_CATEGORIES == 1}category{else}categories{/if}.]]></item>
-		<item name="blog.entry.categorizedEntries"><![CDATA[Articles From Category “{$category->getTitle()}”]]></item>
-		<item name="blog.entry.comment"><![CDATA[Article Comment]]></item>
-		<item name="blog.entry.comment.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your comment on the article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your comment on the article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.comment.like.notification.title"><![CDATA[Likes a comment (Article)]]></item>
-		<item name="blog.entry.comment.like.notification.title.stacked"><![CDATA[{#$count} users like your comment (Article)]]></item>
-		<item name="blog.entry.comment.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}a guest{/if} commented on your article "{@$entry->subject}":
+		<item name="blog.entry.categories.error.tooMany"><![CDATA[Označili ste previše kategorija. Možete označiti {@BLOG_ENTRY_MAX_CATEGORIES} {if BLOG_ENTRY_MAX_CATEGORIES == 1}kategoriju{else}kategorija{/if}.]]></item>
+		<item name="blog.entry.categorizedEntries"><![CDATA[Članci Iz Kategorije “{$category->getTitle()}”]]></item>
+		<item name="blog.entry.comment"><![CDATA[Komentari Članka]]></item>
+		<item name="blog.entry.comment.like.notification.message"><![CDATA[{@$author->getAnchorTag()} kaže da mu/joj se sviđa vaš komentar <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} i {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} i {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} i {#$others} ostalih{/if} kažu da im se sviđa vaš komentar <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.comment.like.notification.title"><![CDATA[Kaže da mu se sviđa komentar (Article)]]></item>
+		<item name="blog.entry.comment.like.notification.title.stacked"><![CDATA[{#$count} članova kažu da im se sviđa vaš komentar (Article)]]></item>
+		<item name="blog.entry.comment.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}gost{/if} je komentarisao vaš članak "{@$entry->subject}":
 {if $notificationType == 'instant'}
 ---------------------------------
 {@$comment->message} 
@@ -90,67 +90,67 @@
 {link application='blog' controller='Entry' object=$entry isEmail=true}#comments{/link}]]></item>
 		<item name="blog.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} replied to a comment by {$commentAuthor->username} on your article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
 		<item name="blog.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to a comment by {if $author->userID}<a href="{link controller='User' object=$author}{/link}" class="userLink" data-user-id="{@$author->userID}">{$author->username}</a>{else}{$author->username}{/if} on your article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.title"><![CDATA[New Reply (Article)]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies (Article)]]></item>
-		<item name="blog.entry.comments"><![CDATA[Comments]]></item>
-		<item name="blog.entry.comments.count"><![CDATA[{#$entry->comments} Comment{if $entry->comments != 1}s{/if}]]></item>
-		<item name="blog.entry.date"><![CDATA[Date]]></item>
-		<item name="blog.entry.date.error.notValid"><![CDATA[The set date is invalid, date may not be in the future.]]></item>
-		<item name="blog.entry.delayedPublication"><![CDATA[Article will be published on {@$entry->publicationDate|plainTime}.]]></item>
-		<item name="blog.entry.delete"><![CDATA[Delete]]></item>
-		<item name="blog.entry.delete.confirmMessage"><![CDATA[Do you really want to delete this article?]]></item>
-		<item name="blog.entry.delete.success"><![CDATA[The article has been deleted.]]></item>
-		<item name="blog.entry.delete.sure"><![CDATA[Do you really want to delete the article “{$entry->subject}”?]]></item>
-		<item name="blog.entry.disable"><![CDATA[Disable]]></item>
-		<item name="blog.entry.draft"><![CDATA[Draft]]></item>
-		<item name="blog.entry.edit"><![CDATA[Edit Article]]></item>
-		<item name="blog.entry.editReason"><![CDATA[Edit Reason (optional)]]></item>
-		<item name="blog.entry.enable"><![CDATA[Approve]]></item>
-		<item name="blog.entry.enableComments"><![CDATA[Allow Comments]]></item>
-		<item name="blog.entry.enableComments.description"><![CDATA[Allow others to comment on your article.]]></item>
-		<item name="blog.entry.enableDelayedPublication"><![CDATA[Delayed publication]]></item>
-		<item name="blog.entry.entries"><![CDATA[Articles]]></item>
-		<item name="blog.entry.featured"><![CDATA[Featured]]></item>
-		<item name="blog.entry.hasOldVersions"><![CDATA[Older Versions]]></item>
-		<item name="blog.entry.information"><![CDATA[Information]]></item>
-		<item name="blog.entry.label.readMore"><![CDATA[Insert [readmore]]]></item>
-		<item name="blog.entry.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your article <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your article <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.like.notification.title"><![CDATA[Likes your article]]></item>
-		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} users like your article]]></item>
-		<item name="blog.entry.log.trash.summary"><![CDATA[Entry was deleted by {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} for the following reason: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
-		<item name="blog.entry.markAllAsRead"><![CDATA[Mark All Articles as Read]]></item>
-		<item name="blog.entry.mention.notification.mail"><![CDATA[{@$author->username} mentioned you in the blog article "{$entry->subject}":
+		<item name="blog.entry.commentResponseOwner.notification.title"><![CDATA[Novi Odgovor (Članak)]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} novi Odgovori (Članak)]]></item>
+		<item name="blog.entry.comments"><![CDATA[Komentari]]></item>
+		<item name="blog.entry.comments.count"><![CDATA[{#$entry->comments} Komentar{if $entry->comments != 1}a{/if}]]></item>
+		<item name="blog.entry.date"><![CDATA[Datum]]></item>
+		<item name="blog.entry.date.error.notValid"><![CDATA[Datum je nevažeći. Datum ne može biti u budućnosti]]></item>
+		<item name="blog.entry.delayedPublication"><![CDATA[Članak će biti objavljen: {@$entry->publicationDate|plainTime}.]]></item>
+		<item name="blog.entry.delete"><![CDATA[Izbriši]]></item>
+		<item name="blog.entry.delete.confirmMessage"><![CDATA[Da li zaista želite da izbrišete ovaj članak?]]></item>
+		<item name="blog.entry.delete.success"><![CDATA[Članak je izbrisan.]]></item>
+		<item name="blog.entry.delete.sure"><![CDATA[Da li zaista želite da izbrišete članak “{$entry->subject}”?]]></item>
+		<item name="blog.entry.disable"><![CDATA[Onemogući]]></item>
+		<item name="blog.entry.draft"><![CDATA[Sačuvaj]]></item>
+		<item name="blog.entry.edit"><![CDATA[Uredi Članak]]></item>
+		<item name="blog.entry.editReason"><![CDATA[Uredi Razlog (opciono)]]></item>
+		<item name="blog.entry.enable"><![CDATA[Odobri]]></item>
+		<item name="blog.entry.enableComments"><![CDATA[Omogući Komentare]]></item>
+		<item name="blog.entry.enableComments.description"><![CDATA[Dozvoli drugima da komentarišu vaš članak.]]></item>
+		<item name="blog.entry.enableDelayedPublication"><![CDATA[Odloženo objavljivanje]]></item>
+		<item name="blog.entry.entries"><![CDATA[Članci]]></item>
+		<item name="blog.entry.featured"><![CDATA[Istaknuto]]></item>
+		<item name="blog.entry.hasOldVersions"><![CDATA[Starije Verzije]]></item>
+		<item name="blog.entry.information"><![CDATA[Informacije]]></item>
+		<item name="blog.entry.label.readMore"><![CDATA[Ubaci [pročitajviše]]]></item>
+		<item name="blog.entry.like.notification.message"><![CDATA[{@$author->getAnchorTag()} kaže da mu/joj se sviđa vaš članak <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} i {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} i {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} i {#$others} others{/if} kažu da im se sviđa vaš članak <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.like.notification.title"><![CDATA[Kaže da mu se sviđa vaš članak]]></item>
+		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} članova kažu da im se sviđa vaš članak]]></item>
+		<item name="blog.entry.log.trash.summary"><![CDATA[To je obrisano od strane {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} zbog: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
+		<item name="blog.entry.markAllAsRead"><![CDATA[Označi Sve Članke Kao Pročitane]]></item>
+		<item name="blog.entry.mention.notification.mail"><![CDATA[{@$author->username} vas pominje u članku "{$entry->subject}":
 {link application='blog' controller='Entry' object=$entry isEmail=true}{/link}]]></item>
-		<item name="blog.entry.mention.notification.message"><![CDATA[{@$author->getAnchorTag()} mentioned you in the blog article <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.mention.notification.title"><![CDATA[You have been mentioned]]></item>
-		<item name="blog.entry.message"><![CDATA[Message]]></item>
-		<item name="blog.entry.moderation.info"><![CDATA[Articles created by you have to be manually approved by a moderator.]]></item>
-		<item name="blog.entry.moderation.redirect"><![CDATA[The article has been created, it will be published as soon as a moderator approves it.]]></item>
-		<item name="blog.entry.moreEntries"><![CDATA[More Articles]]></item>
-		<item name="blog.entry.moreEntries.all"><![CDATA[Show All]]></item>
-		<item name="blog.entry.nextEntry"><![CDATA[Next Article]]></item>
-		<item name="blog.entry.noEntries"><![CDATA[There are no articles yet.]]></item>
-		<item name="blog.entry.notification.mail"><![CDATA[{@$author->username} wrote the article "{@$entry->subject}":
+		<item name="blog.entry.mention.notification.message"><![CDATA[{@$author->getAnchorTag()} vas pominje u članku <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.mention.notification.title"><![CDATA[Pomenuti ste]]></item>
+		<item name="blog.entry.message"><![CDATA[Poruka]]></item>
+		<item name="blog.entry.moderation.info"><![CDATA[Članke koje ste napisali moraju biti ručno odobreni od strane moderatora.]]></item>
+		<item name="blog.entry.moderation.redirect"><![CDATA[Članak je napisan, biće objavljen čim ga moderator objavi.]]></item>
+		<item name="blog.entry.moreEntries"><![CDATA[Više Članaka]]></item>
+		<item name="blog.entry.moreEntries.all"><![CDATA[Prikaži Sve]]></item>
+		<item name="blog.entry.nextEntry"><![CDATA[Sledeći Članak]]></item>
+		<item name="blog.entry.noEntries"><![CDATA[Još nema članaka]]></item>
+		<item name="blog.entry.notification.mail"><![CDATA[{@$author->username} je napisao/la članak "{@$entry->subject}":
 {link application='blog' controller='Entry' object=$entry isEmail=true}{/link}]]></item>
-		<item name="blog.entry.notification.message"><![CDATA[{@$author->getAnchorTag()} wrote the article <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.notification.title"><![CDATA[New Article]]></item>
-		<item name="blog.entry.previousEntry"><![CDATA[Previous Article]]></item>
-		<item name="blog.entry.publication"><![CDATA[Publication]]></item>
-		<item name="blog.entry.publicationDate"><![CDATA[Publication Date]]></item>
-		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[Publication date is invalid.]]></item>
-		<item name="blog.entry.recentActivity.entry"><![CDATA[Wrote the article <a href="{link application='blog' controller='Entry' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.recentActivity.entryComment"><![CDATA[Commented on article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Replied to a comment by <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> on article <a href="{link application='blog' controller='Entry' object=$entry}{/link}#comments" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[Liked the article <a href="{link application='blog' controller='Entry' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.restore"><![CDATA[Restore]]></item>
-		<item name="blog.entry.searchEntries"><![CDATA[Search Articles]]></item>
-		<item name="blog.entry.setAsFeatured"><![CDATA[Mark as “Featured”]]></item>
-		<item name="blog.entry.showUserEntries"><![CDATA[Display Articles by {$user->username}]]></item>
-		<item name="blog.entry.trash"><![CDATA[Move to Trash]]></item>
-		<item name="blog.entry.trash.confirmMessage"><![CDATA[Do you really want to move this article to trash?]]></item>
-		<item name="blog.entry.trash.reason"><![CDATA[Reason (optional)]]></item>
-		<item name="blog.entry.unreadEntries"><![CDATA[Unread Articles]]></item>
+		<item name="blog.entry.notification.message"><![CDATA[{@$author->getAnchorTag()} je napisao/la članak <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.notification.title"><![CDATA[Novi Članak]]></item>
+		<item name="blog.entry.previousEntry"><![CDATA[Prethodni Članak]]></item>
+		<item name="blog.entry.publication"><![CDATA[Objavljivanje]]></item>
+		<item name="blog.entry.publicationDate"><![CDATA[Datum Objavljivanja]]></item>
+		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[Datum objavljivanja je nevažeći.]]></item>
+		<item name="blog.entry.recentActivity.entry"><![CDATA[Je napisao /la članak <a href="{link application='blog' controller='Entry' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.recentActivity.entryComment"><![CDATA[Je komentarisao/la članak <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Je odgovorio/la na komentar od člana <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> na članku <a href="{link application='blog' controller='Entry' object=$entry}{/link}#comments" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[Kaže da mu/joj se sviđa članak <a href="{link application='blog' controller='Entry' object=$entry}{/link}" class="blogEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.restore"><![CDATA[Povrati]]></item>
+		<item name="blog.entry.searchEntries"><![CDATA[Pretraži Članke]]></item>
+		<item name="blog.entry.setAsFeatured"><![CDATA[Označi kao “Istaknuto”]]></item>
+		<item name="blog.entry.showUserEntries"><![CDATA[Prikaži Članke od strane člana {$user->username}]]></item>
+		<item name="blog.entry.trash"><![CDATA[Premesti u korpu za otpatke]]></item>
+		<item name="blog.entry.trash.confirmMessage"><![CDATA[Da li zaista želite da premestite ovaj članak u korpu za otpatke?]]></item>
+		<item name="blog.entry.trash.reason"><![CDATA[Razlog (opciono)]]></item>
+		<item name="blog.entry.unreadEntries"><![CDATA[Nepročitani Članci]]></item>
 		<item name="blog.entry.unsetAsFeatured"><![CDATA[Remove “Featured”-Marking]]></item>
 		<item name="blog.entry.userEntries"><![CDATA[Articles by {$user->username}]]></item>
 		<item name="blog.entry.views"><![CDATA[Views]]></item>
