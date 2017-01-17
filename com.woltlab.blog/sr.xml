@@ -57,39 +57,39 @@
 {@$comment->message} 
 ---------------------------------
 {/if}{link application='blog' controller='Entry' object=$entry isEmail=true}#comments{/link}]]></item>
-		<item name="blog.entry.comment.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} commented on your article "{@$entry->subject}":
+		<item name="blog.entry.comment.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} i {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} i {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} i {if $guestTimesTriggered == 1}gost{else}gosti{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} i{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}gost{else}gosti{/if}{/if}{/if} su komentarisali vaš članak "{@$entry->subject}":
 {link application='blog' controller='Entry' object=$entry isEmail=true}#comments{/link}]]></item>
-		<item name="blog.entry.comment.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} commented on your article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.comment.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} commented on your article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.comment.notification.title"><![CDATA[New Comment (Article)]]></item>
-		<item name="blog.entry.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} new Comments (Article)]]></item>
-		<item name="blog.entry.commentResponse"><![CDATA[Reply to Article Comment]]></item>
-		<item name="blog.entry.commentResponse.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your reply to a comment on the article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.commentResponse.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your reply to a comment on the article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.commentResponse.like.notification.title"><![CDATA[Likes your reply to a comment (Article)]]></item>
-		<item name="blog.entry.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} users like your reply to a comment (Article)]]></item>
-		<item name="blog.entry.commentResponse.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}a guest{/if} replied to your comment on the article "{@$entry->subject}":
+		<item name="blog.entry.comment.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Gost{/if} je komentarisao vaš članak <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.comment.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} i {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} i {if $guestTimesTriggered == 1}gost{else}gosti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} i{/if} {#$others} ostali članovi {if $guestTimesTriggered}i {if $guestTimesTriggered == 1}gost{else}gosti{/if}{/if}{/if} su komentarisali vaš članak <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.comment.notification.title"><![CDATA[Novi Komentar (Članak)]]></item>
+		<item name="blog.entry.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} novi Komentari (Članak)]]></item>
+		<item name="blog.entry.commentResponse"><![CDATA[Odgovori na komentar na članku]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message"><![CDATA[{@$author->getAnchorTag()} kaže da mu/joj se sviđa vaš odgovor na komentar na članku <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} i {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} i {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} i {#$others} ostali{/if} kažu da im se sviđa vaš odgovor na komentar na članku <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.commentResponse.like.notification.title"><![CDATA[Kaže da mu/joj se sviđa vaš odgovor na komentar (Članak)]]></item>
+		<item name="blog.entry.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} članova kažu da im se sviđa vaš odgovor na komentar (Članak)]]></item>
+		<item name="blog.entry.commentResponse.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}gost{/if} je odgovorio na vaš komentar na članaku "{@$entry->subject}":
 {if $notificationType == 'instant'}
 ---------------------------------
 {@$response->message} 
 ---------------------------------
 {/if}{link application='blog' controller='Entry' object=$entry isEmail=true}#comments{/link}]]></item>
-		<item name="blog.entry.commentResponse.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to your comment on the article "{@$entry->subject}":
+		<item name="blog.entry.commentResponse.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} i {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} i {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} i {if $guestTimesTriggered == 1}gost{else}guests{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} i{/if} {#$others} ostali članovi {if $guestTimesTriggered}i {if $guestTimesTriggered == 1}gost{else}gosti{/if}{/if}{/if} su odgovorili na vaš komentar na članku "{@$entry->subject}":
 {link application='blog' controller='Entry' object=$entry isEmail=true}#comments{/link}]]></item>
-		<item name="blog.entry.commentResponse.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} replied to your comment on the article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.commentResponse.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to your comment on the article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.commentResponse.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Gost{/if} je odgovorio na vaš komentar na članku <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.commentResponse.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} i {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} i {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} i {if $guestTimesTriggered == 1}gost{else}gosti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} i{/if} {#$others} ostali članovi {if $guestTimesTriggered}i {if $guestTimesTriggered == 1}gost{else}guests{/if}{/if}{/if} su odgovorili na vaš komentar na članku <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
 		<item name="blog.entry.commentResponse.notification.title"><![CDATA[New Reply (Article)]]></item>
 		<item name="blog.entry.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies (Article)]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}a guest{/if} replied to a comment by "{@$commentAuthor->username}" on your article "{@$entry->subject}":
+		<item name="blog.entry.commentResponseOwner.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}gost{/if} je odgovorio na komentar od strane "{@$commentAuthor->username}" na vašem članku "{@$entry->subject}":
 {if $notificationType == 'instant'}
 ---------------------------------
 {@$response->message} 
 ---------------------------------
 {/if}{link application='blog' controller='Entry' object=$entry isEmail=true}#comments{/link}]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to a comment by "{@$commentAuthor->username}" on your article "{@$entry->subject}":
+		<item name="blog.entry.commentResponseOwner.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} i {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} i {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} i {if $guestTimesTriggered == 1}gost{else}guests{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} i{/if} {#$others} ostali članovi {if $guestTimesTriggered}i {if $guestTimesTriggered == 1}a guest{else}gosti{/if}{/if}{/if} su odgovorili na komentar od strane "{@$commentAuthor->username}" na vašem članku "{@$entry->subject}":
 {link application='blog' controller='Entry' object=$entry isEmail=true}#comments{/link}]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} replied to a comment by {$commentAuthor->username} on your article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to a comment by {if $author->userID}<a href="{link controller='User' object=$author}{/link}" class="userLink" data-user-id="{@$author->userID}">{$author->username}</a>{else}{$author->username}{/if} on your article <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}Gost{/if} je odgovorio na komentar od strane {$commentAuthor->username} na vašem članku <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} i {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} i {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} i {if $guestTimesTriggered == 1}gost{else}gosti{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} i{/if} {#$others} ostali članovi {if $guestTimesTriggered}i {if $guestTimesTriggered == 1}gost{else}guests{/if}{/if}{/if} su odgovorili na komentar od strane {if $author->userID}<a href="{link controller='User' object=$author}{/link}" class="userLink" data-user-id="{@$author->userID}">{$author->username}</a>{else}{$author->username}{/if} na vašem članku <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
 		<item name="blog.entry.commentResponseOwner.notification.title"><![CDATA[Novi Odgovor (Članak)]]></item>
 		<item name="blog.entry.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} novi Odgovori (Članak)]]></item>
 		<item name="blog.entry.comments"><![CDATA[Komentari]]></item>
@@ -331,41 +331,41 @@
 		<item name="wcf.search.type.com.woltlab.blog.entry"><![CDATA[Članke]]></item>
 	</category>
 	<category name="wcf.tagging">
-		<item name="wcf.tagging.objectType.com.woltlab.blog.entry"><![CDATA[Articles]]></item>
-		<item name="wcf.tagging.taggedObjects.com.woltlab.blog.entry"><![CDATA[Articles Tagged With “{$tag->name}”]]></item>
+		<item name="wcf.tagging.objectType.com.woltlab.blog.entry"><![CDATA[Članci]]></item>
+		<item name="wcf.tagging.taggedObjects.com.woltlab.blog.entry"><![CDATA[Članci označeni sa “{$tag->name}”]]></item>
 	</category>
 	<category name="wcf.user">
-		<item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[Articles]]></item>
+		<item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[Članci]]></item>
 	</category>
 	<category name="wcf.user.condition">
-		<item name="wcf.user.condition.blogEntries"><![CDATA[Blog Articles]]></item>
+		<item name="wcf.user.condition.blogEntries"><![CDATA[Članci na Blogu]]></item>
 	</category>
 	<category name="wcf.user.notification">
 		<item name="wcf.user.notification.com.woltlab.blog"><![CDATA[Blog]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entry.entry"><![CDATA[Notify when there are new articles in watched blogs]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entry.mention"><![CDATA[Notify when I am mentioned]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.like.notification.like"><![CDATA[Notify when my comments are liked]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.notification.comment"><![CDATA[Notify when I receive new comments on my articles]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.like.notification.like"><![CDATA[Notify when replies to my comments are liked]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponse"><![CDATA[Notify when I receive new replies to my comments]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponseOwner"><![CDATA[Notify when I receive new replies to comments on my articles]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.likeableEntry.notification.like"><![CDATA[Notify when my articles are liked]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.entry"><![CDATA[Obavesti me kada bude novih članaka u blogovima koje pratim]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.mention"><![CDATA[Obavesti me kada budem pomenut]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.like.notification.like"><![CDATA[Obavesti me kada neko kaže da mu se sviđaju moji komentari]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.notification.comment"><![CDATA[Obavesti me kada neko napiše komentar na mojim člancima]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.like.notification.like"><![CDATA[Obavesti me kada neko kaže da mu se sviđaju moji odgovori na komentare]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponse"><![CDATA[Obavesti me kada neko odgovori na moje komentare]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponseOwner"><![CDATA[Obavesti me kada neko odgovori na moje komentare na mojim člancima]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.likeableEntry.notification.like"><![CDATA[Obavesti me kada neko kaže da mu se sviđaju moji članci]]></item>
 	</category>
 	<category name="wcf.user.objectWatch">
-		<item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.blog"><![CDATA[Receive notifications for new articles.]]></item>
-		<item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.category"><![CDATA[Enable notifications for new articles in this category]]></item>
-		<item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.blog"><![CDATA[Watch blog]]></item>
-		<item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.category"><![CDATA[Watch Category]]></item>
-		<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.blog"><![CDATA[Do not watch blog]]></item>
-		<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.category"><![CDATA[Do not watch category]]></item>
+		<item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.blog"><![CDATA[Primaj obaveštenja o novim člancima]]></item>
+		<item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.category"><![CDATA[Omogući obaveštenja za nove članke u ovoj kategoriji]]></item>
+		<item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.blog"><![CDATA[Prati blog]]></item>
+		<item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.category"><![CDATA[Prati kategoriju]]></item>
+		<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.blog"><![CDATA[Ne prati blog]]></item>
+		<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.category"><![CDATA[Ne prati kategoriju]]></item>
 	</category>
 	<category name="wcf.user.profile">
-		<item name="wcf.user.profile.menu.blogs"><![CDATA[Blogs]]></item>
+		<item name="wcf.user.profile.menu.blogs"><![CDATA[Blogovi]]></item>
 	</category>
 	<category name="wcf.user.recentActivity">
-		<item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.recentActivityEvent"><![CDATA[Comment (Article)]]></item>
-		<item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.response.recentActivityEvent"><![CDATA[Reply (Article)]]></item>
-		<item name="wcf.user.recentActivity.com.woltlab.blog.likeableEntry.recentActivityEvent"><![CDATA[Like (Article)]]></item>
-		<item name="wcf.user.recentActivity.com.woltlab.blog.recentActivityEvent.entry"><![CDATA[Article]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.recentActivityEvent"><![CDATA[Komentar (Članak)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.response.recentActivityEvent"><![CDATA[Odgovor (Članak)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.likeableEntry.recentActivityEvent"><![CDATA[Sviđanja (Članak)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.recentActivityEvent.entry"><![CDATA[Članak]]></item>
 	</category>
 </language>
