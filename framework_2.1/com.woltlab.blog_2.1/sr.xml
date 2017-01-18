@@ -6,10 +6,10 @@
 		<item name="blog.acp.menu.link.blog.category.list"><![CDATA[Lista kategorija]]></item>
 	</category>
 	<category name="blog.blog">
-		<item name="blog.blog.accessLevel"><![CDATA[Može videti blog]]></item>
+		<item name="blog.blog.accessLevel"><![CDATA[Ko može videti blog]]></item>
 		<item name="blog.blog.accessLevel.description"><![CDATA[Ovaj blog i njen sadržaj treba da bude dostupan samo za izabrane članove.]]></item>
 		<item name="blog.blog.accessLevel.everyone"><![CDATA[Svi]]></item>
-		<item name="blog.blog.accessLevel.following"><![CDATA[Članove koje pratim]]></item>
+		<item name="blog.blog.accessLevel.following"><![CDATA[Članovi koje pratim]]></item>
 		<item name="blog.blog.accessLevel.owner"><![CDATA[Samo ja]]></item>
 		<item name="blog.blog.accessLevel.registered"><![CDATA[Registrovani članovi]]></item>
 		<item name="blog.blog.add"><![CDATA[Kreiraj blog]]></item>
@@ -38,14 +38,14 @@
 		<item name="blog.category.delete.sure"><![CDATA[Da li zaista želite da obrišete ovu kategoriju? Sve kategorije u toj kategoriji će biti premeštene u glavnoj kategoriji. Članci koji su samo u toj kategoriji će biti izbrisani.]]></item>
 	</category>
 	<category name="blog.entry">
-		<item name="blog.entry.add"><![CDATA[Napiši Članak]]></item>
+		<item name="blog.entry.add"><![CDATA[Napiši članak]]></item>
 		<item name="blog.entry.blog"><![CDATA[Blog]]></item>
-		<item name="blog.entry.button.add"><![CDATA[Dodaj Članak]]></item>
+		<item name="blog.entry.button.add"><![CDATA[Dodaj članak]]></item>
 		<item name="blog.entry.button.publish"><![CDATA[Objavi]]></item>
 		<item name="blog.entry.button.saveAsDraft"><![CDATA[Sačuvaj]]></item>
 		<item name="blog.entry.categories"><![CDATA[Kategorije]]></item>
 		<item name="blog.entry.categories.error.tooMany"><![CDATA[Označili ste previše kategorija. Možete označiti {@BLOG_ENTRY_MAX_CATEGORIES} {if BLOG_ENTRY_MAX_CATEGORIES == 1}kategoriju{else}kategorija{/if}.]]></item>
-		<item name="blog.entry.categorizedEntries"><![CDATA[Članci Iz Kategorije “{$category->getTitle()}”]]></item>
+		<item name="blog.entry.categorizedEntries"><![CDATA[Članci iz kategorije “{$category->getTitle()}”]]></item>
 		<item name="blog.entry.comment"><![CDATA[Komentari Članka]]></item>
 		<item name="blog.entry.comment.like.notification.message"><![CDATA[{@$author->getAnchorTag()} kaže da mu/joj se sviđa vaš komentar <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
 		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} i {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} i {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} i {#$others} ostalih{/if} kažu da im se sviđa vaš komentar <a href="{link application='blog' controller='Entry' object=$entry}#comments{/link}">{$entry->subject}</a>.]]></item>
@@ -119,23 +119,23 @@
 		<item name="blog.entry.like.notification.title"><![CDATA[Kaže da mu se sviđa vaš članak]]></item>
 		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} članova kažu da im se sviđa vaš članak]]></item>
 		<item name="blog.entry.log.trash.summary"><![CDATA[To je obrisano od strane {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} zbog: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
-		<item name="blog.entry.markAllAsRead"><![CDATA[Označi Sve Članke Kao Pročitane]]></item>
+		<item name="blog.entry.markAllAsRead"><![CDATA[Označi sve članke kao pročitane]]></item>
 		<item name="blog.entry.mention.notification.mail"><![CDATA[{@$author->username} vas pominje u članku "{$entry->subject}":
 {link application='blog' controller='Entry' object=$entry isEmail=true}{/link}]]></item>
 		<item name="blog.entry.mention.notification.message"><![CDATA[{@$author->getAnchorTag()} vas pominje u članku <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
 		<item name="blog.entry.mention.notification.title"><![CDATA[Pomenuti ste]]></item>
-		<item name="blog.entry.message"><![CDATA[Poruka]]></item>
+		<item name="blog.entry.message"><![CDATA[Sadržaj]]></item>
 		<item name="blog.entry.moderation.info"><![CDATA[Članke koje ste napisali moraju biti ručno odobreni od strane moderatora.]]></item>
 		<item name="blog.entry.moderation.redirect"><![CDATA[Članak je napisan, biće objavljen čim ga moderator objavi.]]></item>
-		<item name="blog.entry.moreEntries"><![CDATA[Više Članaka]]></item>
+		<item name="blog.entry.moreEntries"><![CDATA[Više članaka]]></item>
 		<item name="blog.entry.moreEntries.all"><![CDATA[Prikaži Sve]]></item>
 		<item name="blog.entry.nextEntry"><![CDATA[Sledeći Članak]]></item>
 		<item name="blog.entry.noEntries"><![CDATA[Još nema članaka]]></item>
 		<item name="blog.entry.notification.mail"><![CDATA[{@$author->username} je napisao/la članak "{@$entry->subject}":
 {link application='blog' controller='Entry' object=$entry isEmail=true}{/link}]]></item>
 		<item name="blog.entry.notification.message"><![CDATA[{@$author->getAnchorTag()} je napisao/la članak <a href="{link application='blog' controller='Entry' object=$entry}{/link}">{$entry->subject}</a>.]]></item>
-		<item name="blog.entry.notification.title"><![CDATA[Novi Članak]]></item>
-		<item name="blog.entry.previousEntry"><![CDATA[Prethodni Članak]]></item>
+		<item name="blog.entry.notification.title"><![CDATA[Novi članak]]></item>
+		<item name="blog.entry.previousEntry"><![CDATA[Prethodni članak]]></item>
 		<item name="blog.entry.publication"><![CDATA[Objavljivanje]]></item>
 		<item name="blog.entry.publicationDate"><![CDATA[Datum Objavljivanja]]></item>
 		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[Datum objavljivanja je nevažeći.]]></item>
@@ -150,7 +150,7 @@
 		<item name="blog.entry.trash"><![CDATA[Premesti u korpu za otpatke]]></item>
 		<item name="blog.entry.trash.confirmMessage"><![CDATA[Da li zaista želite da premestite ovaj članak u korpu za otpatke?]]></item>
 		<item name="blog.entry.trash.reason"><![CDATA[Razlog (opciono)]]></item>
-		<item name="blog.entry.unreadEntries"><![CDATA[Nepročitani Članci]]></item>
+		<item name="blog.entry.unreadEntries"><![CDATA[Nepročitani članci]]></item>
 		<item name="blog.entry.unsetAsFeatured"><![CDATA[Ukloni znak “Istaknuto”]]></item>
 		<item name="blog.entry.userEntries"><![CDATA[Članci od strane {$user->username}]]></item>
 		<item name="blog.entry.views"><![CDATA[Pregleda]]></item>
@@ -162,9 +162,9 @@
 		<item name="blog.header.menu.blog"><![CDATA[Blog]]></item>
 		<item name="blog.header.menu.blogs"><![CDATA[Blogovi]]></item>
 		<item name="blog.header.menu.entries"><![CDATA[Članci]]></item>
-		<item name="blog.header.menu.myBlogs"><![CDATA[Moji Blogovi]]></item>
-		<item name="blog.header.menu.unreadEntries"><![CDATA[Nepročitani Članci]]></item>
-		<item name="blog.header.menu.watchedEntries"><![CDATA[Članci Koje Pratite]]></item>
+		<item name="blog.header.menu.myBlogs"><![CDATA[Moji blogovi]]></item>
+		<item name="blog.header.menu.unreadEntries"><![CDATA[Nepročitani članci]]></item>
+		<item name="blog.header.menu.watchedEntries"><![CDATA[Članci koje pratite]]></item>
 	</category>
 	<category name="blog.index">
 		<item name="blog.index.copyright"><![CDATA[<a href="http://www.woltlab.com"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>Softver: <strong>WoltLab Blog&trade;{if SHOW_VERSION_NUMBER} {@PACKAGE_VERSION}{/if}</strong>, razvijen od strane <strong>WoltLab&reg; GmbH</strong></a>]]></item>
@@ -172,7 +172,7 @@
 		Za zakonito korišćenje ovog softvera izvan roka morate <a href="https://www.woltlab.com">da kupite licencu</a>, ili odmah izbrišite softver i njegov sadržaj.]]></item>
 		<item name="blog.index.news"><![CDATA[Novosti]]></item>
 		<item name="blog.index.stats"><![CDATA[Statistika]]></item>
-		<item name="blog.index.stats.detail"><![CDATA[{#$stats[authors]} Autor{if $stats[authors] != 1}i{/if} - {#$stats[entries]} Članak{if $stats[entries] != 1}Članci{/if} ({#$stats[entriesPerDay]} Članaka po danu) - {#$stats[comments]} Komentar{if $stats[comments] != 1}a{/if}]]></item>
+		<item name="blog.index.stats.detail"><![CDATA[{#$stats[authors]} Autora{if $stats[authors] != 1}{/if} - {#$stats[entries]} Članaka{if $stats[entries] != 1}{/if} ({#$stats[entriesPerDay]} članaka po danu) - {#$stats[comments]} Komentar{if $stats[comments] != 1}a{/if}]]></item>
 	</category>
 	<category name="blog.search">
 		<item name="blog.search.categories"><![CDATA[Traži po kategorijama]]></item>
@@ -308,21 +308,21 @@
 	</category>
 	<category name="wcf.moderation">
 		<item name="wcf.moderation.deletedContent.com.woltlab.blog.entry"><![CDATA[Članci u korpi za otpatke]]></item>
-		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.blog.entry"><![CDATA[Članci Bloga]]></item>
-		<item name="wcf.moderation.type.com.woltlab.blog.entry"><![CDATA[Članci na Blogu]]></item>
+		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.blog.entry"><![CDATA[Članci bloga]]></item>
+		<item name="wcf.moderation.type.com.woltlab.blog.entry"><![CDATA[Članci na blogu]]></item>
 	</category>
 	<category name="wcf.page">
 		<item name="wcf.page.category.com.woltlab.blog"><![CDATA[WoltLab Blog]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogAddForm"><![CDATA[Kreiraj Blog]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogEditForm"><![CDATA[Uredi Blog]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogEntryListPage"><![CDATA[Lista Članaka na Blogu]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogListPage"><![CDATA[Lista Blogova]]></item>
-		<item name="wcf.page.com.woltlab.blog.BlogPage"><![CDATA[Lista Blogova]]></item>
-		<item name="wcf.page.com.woltlab.blog.EntryAddForm"><![CDATA[Napiši Članak]]></item>
-		<item name="wcf.page.com.woltlab.blog.EntryEditForm"><![CDATA[Uredi Članak]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogAddForm"><![CDATA[Kreiraj blog]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogEditForm"><![CDATA[Uredi blog]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogEntryListPage"><![CDATA[Lista članaka na blogu]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogListPage"><![CDATA[Lista blogova]]></item>
+		<item name="wcf.page.com.woltlab.blog.BlogPage"><![CDATA[Lista blogova]]></item>
+		<item name="wcf.page.com.woltlab.blog.EntryAddForm"><![CDATA[Napiši članak]]></item>
+		<item name="wcf.page.com.woltlab.blog.EntryEditForm"><![CDATA[Uredi članak]]></item>
 		<item name="wcf.page.com.woltlab.blog.EntryListPage"><![CDATA[Članci]]></item>
 		<item name="wcf.page.com.woltlab.blog.EntryPage"><![CDATA[Članak]]></item>
-		<item name="wcf.page.com.woltlab.blog.UnreadEntryListPage"><![CDATA[Nepročitani Članci]]></item>
+		<item name="wcf.page.com.woltlab.blog.UnreadEntryListPage"><![CDATA[Nepročitani članci]]></item>
 		<item name="wcf.page.com.woltlab.blog.WatchedEntryListPage"><![CDATA[Članci Koje Pratite]]></item>
 		<item name="wcf.page.sitemap.blog"><![CDATA[Blog]]></item>
 	</category>
@@ -338,7 +338,7 @@
 		<item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[Članci]]></item>
 	</category>
 	<category name="wcf.user.condition">
-		<item name="wcf.user.condition.blogEntries"><![CDATA[Članci na Blogu]]></item>
+		<item name="wcf.user.condition.blogEntries"><![CDATA[Članci na blogu]]></item>
 	</category>
 	<category name="wcf.user.notification">
 		<item name="wcf.user.notification.com.woltlab.blog"><![CDATA[Blog]]></item>
