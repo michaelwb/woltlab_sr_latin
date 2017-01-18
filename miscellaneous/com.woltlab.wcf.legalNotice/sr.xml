@@ -3,7 +3,7 @@
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.legalNotice"><![CDATA[Pravni izveštaj]]></item>
 		<item name="wcf.acp.option.category.legalNotice.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.legal_notice_additional_text"><![CDATA[Dodatke informacije]]></item>
+		<item name="wcf.acp.option.legal_notice_additional_text"><![CDATA[Dodatne informacije]]></item>
 		<item name="wcf.acp.option.legal_notice_additional_text.description"><![CDATA[Možete uneti dodatne informacije za pravni izveštaj.]]></item>
 		<item name="wcf.acp.option.legal_notice_additional_text_enable_html"><![CDATA[Omogući HTML kod za pisanje dodatnih informacija]]></item>
 		<item name="wcf.acp.option.legal_notice_additional_text_enable_html.description"><![CDATA[]]></item>
